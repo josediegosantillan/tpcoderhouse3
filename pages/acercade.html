@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Acerca de - Hamburguesas Verdaderas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <header>
-        <h1 class="titulo_Logo">Hamburguesas verdaderas</h1>
-        <div class="logoMenu">
-        </div>
-        <div class="menuPrincipal">
-           <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a> </li>
-                    <li><a href="../pages/menu.html">Menú</a> </li>
-                    <li><a href="../pages/reservas.html">Reservas</a></li>
-                    <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header"> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center text-decoration-none" href="../index.html">
+                    <img src="../img/Hamburguesa_Icono.webp" alt="Logo Hamburguesas Verdaderas" height="40" class="me-3">
+                    <div class="brand-text">
+                        <span class="fw-bold fs-3">Hamburguesas Verdaderas</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3" href="./menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3" href="./reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3" href="./ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 fw-bold px-3" href="./acercade.html">Acerca de..</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header> 
     <main>
         <section class="acerca">
@@ -65,5 +88,7 @@
         </div>
         <p>© 2025 Hamburguesas Verdaderas. Todos los derechos reservados.</p>
     </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

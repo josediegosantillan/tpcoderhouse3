@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,100 +7,149 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Hamburguesas Verdaderas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <h1 class="titulo_Logo">Hamburguesas verdaderas</h1>
-        <div class="logoMenu">
-        </div>
-        <div class="menuPrincipal">
-           <nav>
-                <ul>
-                    <li><a href="./pages/menu.html">Menú</a> </li>
-                    <li><a href="./pages/reservas.html">Reservas</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-                    <li><a href="./pages/acercade.html">Acerca de..</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header"> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center text-decoration-none" href="#">
+                    <img src="./img/Hamburguesa_Icono.webp" alt="Logo Hamburguesas Verdaderas" height="40" class="me-3">
+                    <div class="brand-text">
+                        <span class="fw-bold fs-3">Hamburguesas Verdaderas</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 px-3" href="./pages/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 fw-bold px-3" href="./pages/reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 fw-bold px-3" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 fw-bold px-3" href="./pages/ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <section class="banner">
-    </section>    
+
+    <section class="banner d-flex align-items-center text-white">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Las Mejores Hamburguesas de la Ciudad</h1>
+            <p class="lead my-4">Hechas con ingredientes naturales y recetas caseras. ¡Te esperamos!</p>
+            <a href="./pages/menu.html" class="btn btn-warning btn-lg">Ver el Menú</a>
+        </div>
+    </section>
+
     <main class="indice">
         <section class="especiales">
-            <div class="especial1">
-                <br>
-                <h2>Hamburguesas Gourmet</h2> <br>
-                <img src="./img/hamburguesa_especial.png"><br> 
-                <p>Nuestras hamburguesas están hechas con carne 
-                    de primera calidad y ingredientes 
-                    frescos para una experiencia inolvidable. 
-                </p><br>
-            </div>
-            <div class="especial2">
-                <h2>Cervezas Artesanales</h2> <br>
-                <img src="./img/cerveza_artesanal.png">
-                <br>
-                <p>Ofrecemos una amplia variedad de cervezas 
-                    artesanales locales e internacionales 
-                    para satisfacer todos los gustos.
-                </p><br>
-            </div>
-            <div class="especial3">
-                <h2>Pizzas Especiales</h2><br>
-                <img src="./img/pizza_especial.png">
-                <br>
-                <p>Ofrecemos una amplia variedad de pizzas 
-                    en nuestros locales e internacionales 
-                    para satisfacer todos los gustos.
-                </p><br>
+            <h2>Nuestras Especialidades</h2>
+            <div class="especiales_container">
+                <div class="listado_especiales">
+                    <h3>Hamburguesas Gourmet</h3> 
+                    <img src="./img/hamburguesa_especial.png"> 
+                    <p>Nuestras hamburguesas están hechas con carne 
+                        de primera calidad y ingredientes 
+                        frescos para una experiencia inolvidable. 
+                    </p>
+                </div>
+                <div class="listado_especiales">
+                    <h3>Cervezas Artesanales</h3>
+                    <img src="./img/cerveza_artesanal.png">
+                    <p>Ofrecemos una amplia variedad de cervezas 
+                        artesanales locales e internacionales 
+                        para satisfacer todos los gustos.
+                    </p>
+                </div>
+                <div class="listado_especiales">
+                    <h3>Pizzas Especiales</h3>
+                    <img src="./img/pizza_especial.png">
+                    
+                    <p>Ofrecemos una amplia variedad de pizzas 
+                        en nuestros locales e internacionales 
+                        para satisfacer todos los gustos.
+                    </p>
+                </div>
             </div>
         </section>
+        
         <section class="resenas">
             <h2>Reseñas de nuestros clientes</h2>
-            <div class="resenasPersonales">
-                <img src="./img/chica1.png">
-                <h3>Sofía G.</h3>
-                <p>Hace 2 semanas</p>
-                <img src="./img/cinco_estrellas.png">
-                <p>Las hamburguesas son increíbles y 
-                    la selección de cervezas es excelente. 
-                    El ambiente es muy agradable y el 
-                    servicio es de primera.
-                </p>
-            </div>
-            <div class="resenasPersonales">
-                <img src="./img/chico.png">
-                <h3>Martín R.</h3>
-                <p>Hace 1 mes</p>
-                <img src="./img/cuatro_estrellas.png">
-                <p>Me gustó mucho la comida y la cerveza, 
-                    pero el lugar puede ser un poco ruidoso 
-                    los fines de semana.
-                </p>
-            </div>
-            <div class="resenasPersonales">
-                <img src="./img/chica2.png">
-                <h3>Lucía P.</h3>
-                <p>Hace 3 meses</p>
-                <img src="./img/cinco_estrellas.png">
-                <p>El mejor lugar para disfrutar de una buena 
-                    hamburguesa y una cerveza artesanal en 
-                    Buenos Aires. ¡Recomendado!
-                </p>
+            <div class="resenas_container">
+                <!-- Reseña 1 -->
+                <div class="resena_card">
+                    <div class="resena_header">
+                        <img src="./img/chica1.png" alt="Foto de Sofía G." class="resena_avatar">
+                        <div class="resena_usuario">
+                            <h3>Sofía G.</h3>
+                            <p class="resena_fecha">Hace 2 semanas</p>
+                        </div>
+                    </div>
+                    <div class="resena_body">
+                        <img src="./img/cinco_estrellas.png" alt="5 estrellas" class="resena_estrellas">
+                        <p>"Las hamburguesas son increíbles y la selección de cervezas es excelente. El ambiente es muy agradable y el servicio es de primera."</p>
+                    </div>
+                </div>
+                <!-- Reseña 2 -->
+                <div class="resena_card">
+                    <div class="resena_header">
+                        <img src="./img/chico.png" alt="Foto de Martín R." class="resena_avatar">
+                        <div class="resena_usuario">
+                            <h3>Martín R.</h3>
+                            <p class="resena_fecha">Hace 1 mes</p>
+                        </div>
+                    </div>
+                    <div class="resena_body">
+                        <img src="./img/cuatro_estrellas.png" alt="4 estrellas" class="resena_estrellas">
+                        <p>"Me gustó mucho la comida y la cerveza, pero el lugar puede ser un poco ruidoso los fines de semana."</p>
+                    </div>
+                </div>
+                <!-- Reseña 3 -->
+                <div class="resena_card">
+                    <div class="resena_header">
+                        <img src="./img/chica2.png" alt="Foto de Lucía P." class="resena_avatar">
+                        <div class="resena_usuario">
+                            <h3>Lucía P.</h3>
+                            <p class="resena_fecha">Hace 3 meses</p>
+                        </div>
+                    </div>
+                    <div class="resena_body">
+                        <img src="./img/cinco_estrellas.png" alt="5 estrellas" class="resena_estrellas">
+                        <p>"El mejor lugar para disfrutar de una buena hamburguesa y una cerveza artesanal en Buenos Aires. ¡Recomendado!"</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="sociales">
-            <a href="https://www.instagram.com/" target="_blank"> <img src="./img/instagram.png" alt="Visita nuestro instagram"> </a>
-            <a href="https://www.facebook.com//" target="_blank"> <img src="./img/logofacebook.png" alt="Visita nuestro facebook"> </a>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="sociales">
+                <a href="https://www.instagram.com/" target="_blank" title="Visita nuestro Instagram">
+                    <img src="./img/instagram.png" alt="Ícono de Instagram">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" title="Visita nuestro Facebook">
+                    <img src="./img/logofacebook.png" alt="Ícono de Facebook">
+                </a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Hamburguesas Verdaderas. Todos los derechos reservados.</p>
+            </div>
         </div>
-        <p>© 2025 Hamburguesas Verdaderas. Todos los derechos reservados.</p>
     </footer>
-    <div>
-    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
