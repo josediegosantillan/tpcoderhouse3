@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo_Logo">Hamburguesas verdaderas</h1>
+        <div class="logoMenu">
+        </div>
+        <div class="menuPrincipal">
+           <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a> </li>
+                    <li><a href="../pages/menu.html">Menú</a> </li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li><a href="./pages/ubicacion.html">Ubicación</a></li>
+                    <li><a href="../pages/acercade.html">Acerca de..</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <main>
+        <section class="reservas">
+            <div class="reserva">
+                <h1>Reservas</h1>
+                <p>Realiza tu reserva en línea para disfrutar de nuestra deliciosa comida.</p><br/>
+                <form action="procesar_reserva.php" method="post">
+                    <div class="reservasItems">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required value="Tu nombre"><br><br>
+                    </div>
+                    <div class="reservasItems">
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" required value="2025-06-15"><br><br>
+                    </div>
+                    <div class="reservasItems">
+                        <label for="hora">Hora:</label>         
+                        <input type="time" id="hora" name="hora" required value="14:00"><br><br>
+                    </div>  
+                    <div class="reservasItems">
+                        <label for="comensales">Comensales:</label>                                                         
+                        <input type="number" id="comensales" name="comensales" min="1" max="10" required><br><br>
+                    </div>
+                    <input type="submit" value="Reservar">
+                </form>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="sociales">
+            <a href="https://www.instagram.com/" target="_blank"> <img src="../img/instagram.png" alt="Visita nuestro instagram"> </a>
+            <a href="https://www.facebook.com//" target="_blank"> <img src="../img/logofacebook.png" alt="Visita nuestro facebook"> </a>
+        </div>
+        <p>© 2025 Hamburguesas Verdaderas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

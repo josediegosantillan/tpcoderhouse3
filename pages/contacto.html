@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="contactoImagen">
+    <header>
+        <h1 class="titulo_Logo">Hamburguesas verdaderas</h1>
+        <div class="logoMenu">
+        </div>
+        <div class="menuPrincipal">
+           <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a> </li>
+                    <li><a href="../pages/menu.html">Menú</a> </li>
+                    <li><a href="../pages/reservas.html">Reservas</a></li>
+                    <li><a href="../pages/ubicacion.html">Ubicación</a></li>
+                    <li><a href="../pages/acercade.html">Acerca de..</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <main>
+       <section class="contacto">
+            <h1>Contactanos:</h1>
+            <div class="formulario">
+                
+                <form action="enviar.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+
+                <!-- <p>Si tienes alguna pregunta o comentario, no dudes en contactarnos.</p>
+                <p>Correo electrónico: EMAIL</p>
+                <p>Teléfono: 123-456-7890</p> -->
+                
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer">
+        </div>
+        <div class="sociales">
+            <a href="https://www.instagram.com/" target="_blank"> <img src="../img/instagram.png" alt="Visita nuestro instagram"> </a>
+            <a href="https://www.facebook.com//" target="_blank"> <img src="../img/logofacebook.png" alt="Visita nuestro facebook"> </a>
+        </div>
+        <p>© 2025 Hamburguesas Verdaderas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
