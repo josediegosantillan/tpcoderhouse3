@@ -6,43 +6,27 @@
 body{
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     background-color: #f3efe2;
-    /* padding-left: 10px; */
 }
 /* header  */
-
-/* .header nav {
-no funcionA
-    background-color: #f0eee7 !important;
-} */
 .header > span {
     color: #5D4037 !important;
 }
 /* 
 especiales index*/
-
  .especiales_container{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin: 1rem 1rem 2rem 0;
  }
-
  .especiales{
-    /* display: flex;
-    flex-direction: column; */
-    margin-top: 1rem;
-    padding: 2rem 1rem;
-    /* align-items: start;
-    justify-content: center; */
     background-color: #f0eee7;
-    
  }
 .especiales > h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: #333;
-    /* font-size: 2.5rem; */ 
+    color: #333; 
     }
         
 /* especiales index */
@@ -50,19 +34,25 @@ especiales index*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: flex-start;
     background-color: #f0eee7;  
  }
+.listado_especiales h3 {
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
 .listado_especiales p {
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
     color: #1c1c1c;
     line-height: 1.2;
-    padding: 1rem 1rem;
+    padding-top: 1rem;;
+    margin:0;
 }
-
 .listado_especiales img {
     max-width: 100%;
     height: auto;
@@ -71,30 +61,32 @@ especiales index*/
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
 }
-
 .listado_especiales img:hover {
     transform: scale(1.02);
 }
+/* Menu, para precios */
+.precio {
+    font-weight: bold ;
+    color: #c27b34 ;
+    font-size: 1.3rem;
+    margin:0;
+}
 /* --- Reseñas index--- */
-
 .resenas {
     margin-top: 2rem;
     padding: 0 20px;
 }
-
 .resenas h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
     color: #333;
 }
-
 .resenas_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
 .resena_card {
     background-color: #fdfbf5;
     border-radius: 15px;
@@ -103,13 +95,11 @@ especiales index*/
     display: flex;
     flex-direction: column;
 }
-
 .resena_header {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
 }
-
 .resena_avatar {
     width: 50px;
     height: 50px;
@@ -118,24 +108,20 @@ especiales index*/
     margin-right: 0.7rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 .resena_usuario h3 {
     margin: 0;
     font-size: 1.1rem;
     color: #2c2c2c;
 }
-
 .resena_fecha {
     margin: 0;
     font-size: 0.85rem;
     color: #777;
 }
-
 .resena_estrellas {
     width: 100px; 
     margin-bottom: 0.75rem;
 }
-
 .resena_body p {
     font-style: italic;
     font-weight: 500;
@@ -143,12 +129,10 @@ especiales index*/
     line-height: 1.6;
     margin: 0;
 }
-
 /* header*/
 .titulo_Logo{
     text-align: center;
     background-color:#f0eee7;
-
 }
 .menuPrincipal nav ul{
     list-style-type: none;
@@ -163,7 +147,6 @@ especiales index*/
     padding: 20px;
     font-size: 17px;
 }
-
 /* index */
 .indice{
     padding-left: 20px;
@@ -175,23 +158,26 @@ especiales index*/
     background-position: center;
     height: 450px;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .contacto{
     background-image:  url(../img/Cerveza_papas_fondo.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center; 
-    padding-top: 200px;
-    padding-bottom: 200px;   
 }
 .formulario{
-    margin-left: 100px;
-    margin-top: 20px;
-    width: 400px; 
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    background-image:  linear-gradient(rgba(10, 11, 11, 0.6) 70%, rgba(0, 0, 0, 0.3) 100%)  ;
+    /* width: 100%;
+    max-width: 700px; */
+    /* max-width: 1200px; */
+    padding: 2.5rem;
+    background-image: linear-gradient(rgba(10, 11, 11, 0.8) 70%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    
 }
 .contacto h1{
     color: white;
@@ -199,7 +185,6 @@ especiales index*/
 .formulario label{
     color: white;
 }
-
 /* reservas */
 .reservas{ /* para body reservas*/
     background-image: url(../img/mesa_restaurant.png);
@@ -213,7 +198,6 @@ especiales index*/
     background: #000000;
     background: linear-gradient(91deg,rgba(0, 0, 0, 0.8) 10%, rgba(8, 8, 8, 0.12) 100%);
     margin-left: 100px;
-    /* margin-top: 100px; */
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -236,7 +220,6 @@ especiales index*/
 }
 /* acerca de ..... */
 .acerca{
-    /* background-color: blue; */
     background-image: url(../img/mesa_restaurant.png);
     background-size:cover;
     background-repeat: no-repeat;
@@ -297,10 +280,65 @@ especiales index*/
     width: 500px;
 }
 /* menu */
+
 .menu{
+    display: flex;
+    flex-direction: column;
    padding-left: 10px;
 }
 
+.menu > h1 {
+    /* font-size: 2rem; */
+    font-weight: 600;
+    /* text-align: center; */
+    /* margin-bottom: 1rem; */
+    color: #333;
+}
+.hamburguesas{
+    display: flex;  
+    flex-direction: column;
+    padding-left: 10px;
+}
+.hamburguesas > h2 {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 600;
+    /* margin-bottom: 1rem; */
+
+    /* font-size: 2rem; */
+    color: #333;
+}
+.hamburguesas-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}   
+.hamburguesa{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;  
+}
+.hamburguesa > h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+.hamburguesa > p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.1;
+    color: #2f2f2f;
+    margin: 0 0 0.5rem 0;
+}   
+.hamburguesa img {
+    /* max-width: 100%; */
+    /* height: auto; */
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    /* transition: transform 0.3s ease; */
+}
 /* sucursales */
 .sucursales{
     padding-left: 20px;
@@ -343,8 +381,8 @@ especiales index*/
     font-size: 0.7rem;
     color: #1f1e1e;
 }
+
 @media (max-width: 768px) {
-   
      .especiales{
         padding: 0;
      }
@@ -361,6 +399,10 @@ especiales index*/
         grid-template-columns: 1fr;
     }
     .resenas_container {
-    grid-template-columns: 1fr
-}
+    grid-template-columns: 1fr;
+    }
+    .formulario {
+        /* max-width: 95%; */
+        padding: 1.5rem;
+    }
 }
