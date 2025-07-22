@@ -1,0 +1,19 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+// @mixin bg-with-cobertura($imagen, $cubrir: variables.$gradient-cubrir-poco)
+.banner {
+  @include mixins.bg-with-cobertura('../img/hamburguesa_cerveza.webp', variables.$gradient-cubrir-poco);
+  height: 450px;
+  
+  &-acerca {
+    @include mixins.bg-with-cobertura('../img/mesa_restaurant.png', variables.$gradient-cubrir-medio);
+  }
+  
+  &-ubicacion {
+    @include mixins.bg-with-cobertura('../img/ubicacion.png', variables.$gradient-cubrir-poco);
+  }
+}
+
+.container {
+  @include mixins.flex-center(column);
+}

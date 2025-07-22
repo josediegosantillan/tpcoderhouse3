@@ -1,0 +1,60 @@
+
+@use '../utilities/variables';
+
+// Mixin para centrar elementos con flexbox
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+// Mixin para backgrounds con imagen y cobertura
+@mixin bg-with-cobertura($imagen, $cubrir: variables.$gradient-cubrir-poco) {
+  background-image: $cubrir, url($imagen);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin card-style($bg-color: variables.$color-card, $padding: variables.$espaciado-medio) {
+  background-color: $bg-color;
+  border-radius: variables.$border-radius-mediano;
+  padding: $padding;
+  box-shadow: variables.$shadow-medio;
+}
+
+// Mixin para texto centrado
+@mixin text-center($margin-bottom: variables.$espaciado-medio) {
+  text-align: center;
+  margin-bottom: $margin-bottom;
+}
+
+
+// Mixin para imágenes con efectos
+@mixin image-hover($scale: 1.02) {
+  border-radius: variables.$border-radius-mediano;
+  box-shadow: variables.$shadow-suave;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+// Mixin para grid responsive
+@mixin grid-responsive($columns: 1, $gap: variables.$espaciado-grande) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+  
+  @media (max-width: variables.$breakpoint-mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Mixin para media queries mobile
+@mixin mobile-only {
+  @media (max-width: variables.$breakpoint-mobile) {
+    @content;
+  }
+}

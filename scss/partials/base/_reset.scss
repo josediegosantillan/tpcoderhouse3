@@ -1,6 +1,5 @@
-@use '../utilities/variables' as *;
+@use '../utilities/variables';
 
-// Reset básico
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +7,9 @@
 }
 
 body {
-  font-family: $font-family-primary;
-//   background-color: $color-background;
-//   line-height: 1.6;
+  font-family: variables.$font-family-primary;
+  background-color: variables.$color-background;
+  line-height: 1.6;
 }
 
 ul, ol {
@@ -20,8 +19,3 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
