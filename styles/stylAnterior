@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 body{
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     background-color: #f3efe2;
-}
+} */
 /* header  */
 .header > span {
     color: #5D4037 !important;
@@ -407,6 +407,8 @@ especiales index*/
 .mapa{
     padding-left: 20px;
 }
+
+
 /* --- Estilos del Footer --- */
 .site-footer {
     background-color: #f0eee7;
