@@ -48,37 +48,145 @@
             </div>
         </nav>
     </header> 
-    <main>
-        <section class="acerca">
-                <div class="acercaTexto">
-                    <h1 class="acercaH1">Acerca de nosotros</h1>
-                    <p>Somos una hamburguesería que se dedica a 
-                        ofrecer una experiencia culinaria única y auténtica a 
-                        nuestros clientes. Nuestro equipo de chefs expertos 
-                        trabaja con ingredientes frescos y de alta calidad para 
-                        crear hamburguesas que no solo son sabrosas, sino que también son verdaderamente auténticas.
-                    </p>    
+    <section class="banner banner-acerca d-flex align-items-center text-white">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Nuestra Historia</h1>
+            <p class="lead my-4">Más de 10 años creando experiencias culinarias únicas</p>
+            <a href="./menu.html" class="btn btn-warning btn-lg">Conoce Nuestro Menú</a>
+        </div>
+    </section>
+    <main class="indice">
+        <section class="especiales">
+            <h2>Nuestros Valores</h2>
+            <div class="especiales_container">
+                <div class="listado_especiales">
+                    <h3>Ingredientes Premium</h3> 
+                    <img src="../img/hamburguesa_especial.png" alt="Hamburguesa con ingredientes premium"> 
+                    <p>Utilizamos únicamente ingredientes frescos y de primera calidad, 
+                        seleccionados cuidadosamente por nuestros chefs para garantizar 
+                        el mejor sabor en cada bocado.
+                    </p>
                 </div>
-        </section>
-        <section class="filosofia">
-            <h3>Nuestra Filosofía</h3><br>
-            <p> 
-                En esencia, creemos en crear una experiencia memorable 
-                alrededor de cada mordisco y cada sorbo. Nos esforzamos por 
-                combinar el sabor auténtico de la tradición hamburguesera y 
-                cervecera con enfoques culinarios innovadores. Nuestro objetivo es 
-                que cada hamburguesa y cada cerveza artesanal no solo te satisfagan,
-                 sino que también te cuenten una historia.</p>
-        </section>
-        <section class="chef">
-            <div class="nuestroEquipo">
-                <br><h3>Nuestro equipo.</h3><br>
-                <p>Nuestros chef, son apasionados apasionado por la comida y la cerveza,
-                    son el corazón y alma detrás de cada hamburguesa y cada sorbo que servimos.
-                </p><br>
+                <div class="listado_especiales">
+                    <h3>Tradición Artesanal</h3>
+                    <img src="../img/cerveza_artesanal.png" alt="Cerveza artesanal">
+                    <p>Cada hamburguesa y cerveza es elaborada siguiendo técnicas 
+                        tradicionales combinadas con innovación culinaria moderna,
+                        creando sabores únicos e inolvidables.
+                    </p>
+                </div>
+                <div class="listado_especiales">
+                    <h3>Experiencia Completa</h3>
+                    <img src="../img/hamburguesa_especial.png" alt="Ambiente del restaurante">
+                    <p>Ofrecemos no solo comida excepcional, sino una experiencia 
+                        gastronómica completa en un ambiente acogedor donde cada 
+                        detalle está pensado para tu disfrute.
+                    </p>
+                </div>
             </div>
-           <div class="imageChef"></div>
-            </section>
+        </section>
+        <!-- Historia de la empresa -->
+        <section class="filosofia">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h2 class="text-center mb-4">Nuestra Historia</h2>
+                        <p>Todo comenzó en 2015 cuando dos amigos apasionados por la gastronomía decidieron crear 
+                        algo especial. Somos una hamburguesería que se dedica a ofrecer una experiencia culinaria 
+                        única y auténtica a nuestros clientes. Nuestro equipo de chefs expertos trabaja con 
+                        ingredientes frescos y de alta calidad para crear hamburguesas que no solo son sabrosas, 
+                        sino que también son verdaderamente auténticas.</p>
+                
+                        <h3 class="mt-4">Nuestra Filosofía</h3>
+                        <p>En esencia, creemos en crear una experiencia memorable alrededor de cada mordisco y 
+                        cada sorbo. Nos esforzamos por combinar el sabor auténtico de la tradición hamburguesera 
+                        y cervecera con enfoques culinarios innovadores. Nuestro objetivo es que cada hamburguesa 
+                        y cada cerveza artesanal no solo te satisfagan, sino que también te cuenten una historia.</p>
+                        
+                        <h3 class="mt-4">Compromiso con la Calidad</h3>
+                        <p>Trabajamos con proveedores locales que comparten nuestra pasión por la excelencia. 
+                        Cada carne es seleccionada personalmente, cada vegetal inspeccionado, y cada cerveza 
+                        catada antes de llegar a tu mesa. Este compromiso con la calidad es lo que nos ha 
+                        convertido en el lugar favorito de los amantes de las hamburguesas auténticas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="resenas">
+            <h2>Conoce a Nuestro Equipo</h2>
+            <div class="resenas_container">
+                <div class="resena_card">
+                    <div class="resena_header">
+                        <img src="../img/chef1.png" alt="Chef Juan Martínez" class="resena_avatar">
+                        <div class="resena_usuario">
+                            <h3>Juan Martínez</h3>
+                            <p class="resena_fecha">Chef Ejecutivo</p>
+                        </div>
+                    </div>
+                    <div class="resena_body">
+                        <p>"Con más de 15 años de experiencia, mi pasión es crear hamburguesas que despierten 
+                        emociones. Cada receta es un viaje de sabores cuidadosamente diseñado."</p>
+                    </div>
+                </div>
+                
+                <div class="resena_card">
+                    <div class="resena_header">
+                        <img src="../img/chef2.png" alt="Chef Ana Rodríguez" class="resena_avatar">
+                        <div class="resena_usuario">
+                            <h3>Ana Rodríguez</h3>
+                            <p class="resena_fecha">Maestra Cervecera</p>
+                        </div>
+                    </div>
+                    <div class="resena_body">
+                        <p>"Especialista en cervezas artesanales, trabajo para encontrar el maridaje perfecto 
+                        entre nuestras hamburguesas y las mejores cervezas del mundo."</p>
+                    </div>
+                </div>
+                
+                <div class="resena_card">
+                    <div class="resena_header">
+                        <img src="../img/chica1.png" alt="Sofía González" class="resena_avatar">
+                        <div class="resena_usuario">
+                            <h3>Sofía González</h3>
+                            <p class="resena_fecha">Gerente General</p>
+                        </div>
+                    </div>
+                    <div class="resena_body">
+                        <p>"Mi misión es asegurar que cada cliente viva una experiencia excepcional, desde 
+                        el momento que entra hasta que se va con una sonrisa."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estadísticas y logros -->
+        <section class="especiales">
+            <h2>Nuestros Logros</h2>
+            <div class="especiales_container">
+                <div class="listado_especiales">
+                    <h3>+50,000</h3> 
+                    <img src="../img/cinco_estrellas.png" alt="Cinco estrellas"> 
+                    <p>Hamburguesas servidas con amor y dedicación a lo largo 
+                        de nuestros años de trayectoria.
+                    </p>
+                </div>
+                <div class="listado_especiales">
+                    <h3>Premio 2024</h3>
+                    <img src="../img/cinco_estrellas.png" alt="Premio hamburguesa">
+                    <p>"Mejor Hamburguesería Local" otorgado por la Asociación 
+                        Gastronómica de Buenos Aires.
+                    </p>
+                </div>
+                <div class="listado_especiales">
+                    <h3>4.8/5 Estrellas</h3>
+                    <img src="../img/cuatro_estrellas.png" alt="Calificación">
+                    <p>Promedio de calificación en todas las plataformas digitales 
+                        basado en más de 1.200 reseñas de clientes.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="site-footer">
         <div class="footer-container">

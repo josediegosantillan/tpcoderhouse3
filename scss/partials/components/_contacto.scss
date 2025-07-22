@@ -1,8 +1,0 @@
-
-
-@use '../utilities/variables';
-@use '../utilities/mixins';
-
-.contacto {
-  @include mixins.bg-with-cobertura('../img/Cerveza_papas_fondo.png');
-}
