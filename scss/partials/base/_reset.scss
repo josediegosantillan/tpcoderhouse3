@@ -1,0 +1,27 @@
+@use '../utilities/variables' as *;
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-primary;
+//   background-color: $color-background;
+//   line-height: 1.6;
+}
+
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
