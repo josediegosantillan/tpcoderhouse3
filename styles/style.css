@@ -46,7 +46,7 @@ a {
 }
 
 .especiales {
-  background-color: #f0eee7;
+  background-color: #fdfbf5;
   padding: 0;
 }
 .especiales h2 {
@@ -73,10 +73,11 @@ a {
 
 .listado_especiales {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f0eee7;
+  background-color: #fdfbf5;
+  margin: 0 1rem 0 1rem;
 }
 .listado_especiales h3 {
   min-height: 3rem;
@@ -120,6 +121,229 @@ a {
   color: #c27b34;
   font-size: 1.5rem;
   margin: 0;
+}
+
+.resenas {
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+}
+.resenas h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+.resenas_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .resenas_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.resena_card {
+  background-color: #fdfbf5;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
+}
+.resena_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.resena_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.7rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.resena_usuario h3 {
+  margin: 0;
+  color: #2c2c2c;
+}
+.resena_fecha {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+.resena_estrellas {
+  width: 100px;
+  margin-bottom: 0.75rem;
+}
+.resena_body p {
+  font-style: italic;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.site-footer {
+  background-color: #fdfbf5;
+  padding: 1.5rem 1rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sociales {
+  margin-bottom: 0.5rem;
+}
+.sociales img {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.75rem;
+  transition: transform 0.3s ease;
+}
+.sociales img:hover {
+  transform: scale(1.1);
+}
+.sociales a {
+  text-decoration: none;
+}
+
+.copyright p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #000000;
+}
+
+.indice {
+  padding-left: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+.menu h1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.hamburguesas {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+.hamburguesas h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.hamburguesas-container {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .hamburguesas-container {
+    flex-direction: column;
+  }
+}
+
+.hamburguesa {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.hamburguesa h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.hamburguesa p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  color: #2f2f2f;
+  margin: 0 0 0.5rem 0;
+}
+.hamburguesa img {
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+.hamburguesa img:hover {
+  transform: scale(1.02);
+}
+
+.formulario {
+  padding: 1.5rem;
+  background-image: linear-gradient(rgba(10, 11, 11, 0.8) 70%, rgba(0, 0, 0, 0.6) 100%);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.formulario label {
+  color: white;
+}
+@media (max-width: 768px) {
+  .formulario {
+    padding: 1rem;
+  }
+}
+
+.reserva {
+  background: linear-gradient(91deg, rgba(0, 0, 0, 0.8) 10%, rgba(8, 8, 8, 0.12) 100%);
+  margin-left: 100px;
+  padding: 1.5rem;
+  width: 500px;
+}
+.reserva h1, .reserva label {
+  color: white;
+}
+.reserva p {
+  color: white;
+}
+@media (max-width: 768px) {
+  .reserva {
+    margin-left: 1.5rem;
+    width: auto;
+    max-width: calc(100% - 3rem);
+  }
+}
+
+.reservasItems {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#fecha, #nombre, #hora, #comensales {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.contacto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Cerveza_papas_fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

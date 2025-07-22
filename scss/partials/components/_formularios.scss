@@ -1,0 +1,55 @@
+@use '../utilities/variables' ;
+@use '../utilities/mixins';
+
+.formulario {
+  padding: variables.$espaciado-grande;
+  background-image: variables.$gradient-form;
+  border-radius: variables.$border-radius-chico;
+  box-shadow: variables.$shadow-fuerte;
+  
+  label {
+    color: variables.$color-text-white;
+  }
+  
+  @include mixins.movil {
+    padding: variables.$espaciado-medio;
+  }
+}
+
+// Página de reservas
+.reserva {
+  background: variables.$gradient-dark;
+  margin-left: 100px;
+  padding: variables.$espaciado-grande;
+  width: 500px;
+  
+  h1, label {
+    color: variables.$color-text-white;
+  }
+  
+  p {
+    color: variables.$color-text-white;
+  }
+  @include mixins.movil {
+    margin-left: variables.$espaciado-grande;
+    width: auto;
+    max-width: calc(100% - #{variables.$espaciado-grande * 2});
+  }
+}
+
+.reservasItems {
+  font-size: 16px;
+  font-weight: variables.$font-weight-bold;
+}
+
+#fecha, #nombre, #hora, #comensales {
+  font-size: 16px;
+  font-weight: variables.$font-weight-bold;
+  padding: variables.$espaciado-chico;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: variables.$espaciado-chico;
+  width: 100%;
+  
+  
+}

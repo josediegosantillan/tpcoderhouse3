@@ -1,0 +1,66 @@
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+.resenas {
+  margin-top: variables.$espaciado-grande;
+  padding: 0 variables.$espaciado-grande;
+  h2 {
+    @include mixins.text-center(variables.$espaciado-grande);
+    color: variables.$color-text-primary;
+  }
+//   &_ es hijo de resenas
+  &_container {
+    @include mixins.grid-responsive(3, variables.$espaciado-grande);
+  }
+}
+
+
+.resena {
+  &_card {
+    @include mixins.card-style(variables.$color-card, variables.$espaciado-medio);
+    @include mixins.flex-center(column, normal, normal);
+  }
+  
+  &_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: variables.$espaciado-chico;
+  }
+  
+  &_avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: variables.$border-radius-redondo;
+    object-fit: cover;
+    margin-right: 0.7rem;
+    box-shadow: variables.$shadow-fuerte;
+  }
+  
+  &_usuario {
+    h3 {
+      margin: 0;
+      color: #2c2c2c;
+    }
+  }
+  
+  &_fecha {
+    margin: 0;
+    font-size: variables.$font-size-chico;
+    color: variables.$color-text-light;
+  }
+  
+  &_estrellas {
+    width: 100px;
+    margin-bottom: 0.75rem;
+  }
+  
+  &_body {
+    p {
+      font-style: italic;
+      font-weight: variables.$font-weight-normal;
+      color: variables.$color-text-dark;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+}

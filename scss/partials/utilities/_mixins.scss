@@ -8,6 +8,7 @@
   align-items: $align;
   justify-content: $justify;
 }
+
 // Mixin para backgrounds con imagen y cobertura
 @mixin bg-with-cobertura($imagen, $cubrir: variables.$gradient-cubrir-poco) {
   background-image: $cubrir, url($imagen);
@@ -16,6 +17,7 @@
   background-position: center;
 }
 
+// Mixin para estilo de tarjetas
 @mixin card-style($bg-color: variables.$color-card, $padding: variables.$espaciado-medio) {
   background-color: $bg-color;
   border-radius: variables.$border-radius-mediano;
@@ -28,7 +30,6 @@
   text-align: center;
   margin-bottom: $margin-bottom;
 }
-
 
 // Mixin para imágenes con efectos
 @mixin image-hover($scale: 1.02) {
@@ -53,8 +54,9 @@
 }
 
 // Mixin para media queries mobile
-@mixin mobile-only {
+@mixin movil {
   @media (max-width: variables.$breakpoint-mobile) {
+    // lo que escriba aca va a ser aplicado en movil
     @content;
   }
 }
