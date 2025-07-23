@@ -1,0 +1,26 @@
+
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+.card {
+  @include mixins.flex(column, center, flex-start);
+  background-color: variables.$color-tarjeta;
+
+}
+//para el formato de la imagen que tienen las cards
+.card-image {
+max-width: 100%;
+height: auto;
+margin-top: 0.7rem;
+border-radius: 10px;
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+transition: transform 0.3s ease;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 1rem 1rem 2rem 0;
+}
+

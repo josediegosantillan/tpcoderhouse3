@@ -1,0 +1,5 @@
+@use '../utilities/mixins';
+
+.banner {
+  @include mixins.barner('../img/hamburguesa_cerveza.webp', 450px);
+}

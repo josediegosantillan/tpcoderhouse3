@@ -1,16 +1,17 @@
 
 // Colores principales
-$color-primary: #5D4037;
-$color-secondary: #c27b34;
-$color-background: #f3efe2;
-$color-card:#fdfbf5;
-$color-card-light: #fdfbf5;
+$color-primario: #5D4037;
+$color-secundario: #c27b34;
+$color-fondo: #f3efe2;
+$color-tarjeta: #f0eee7;
+$color-tarjeta-clara: #fdfbf5;
+$color-body:#f3efe2;
 // Colores de texto
-$color-text-primary: #333;
-$color-text-secondary: #1c1c1c;
-$color-text-light: #777;
-$color-text-white: white;
-$color-text-dark: #000000;
+$color-text-primario: #333;
+$color-text-secundario: #1c1c1c;
+$color-text-gris:  #777;
+$color-text-blanco: white;
+$color-text-negro: #000000;
 
 // Tipografías
 $font-family-primary: 'Roboto', Helvetica, Arial, sans-serif;
@@ -45,10 +46,10 @@ $shadow-fuerte: 0 0 20px rgba(0, 0, 0, 0.5);
 $shadow-avatar: 0 0 10px rgba(0, 0, 0, 0.3);
 
 // Gradientes
-$gradient-cubrir-poco: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-$gradient-cubrir-medio: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-$gradient-form: linear-gradient(rgba(10, 11, 11, 0.8) 70%, rgba(0, 0, 0, 0.6) 100%);
-$gradient-dark: linear-gradient(91deg, rgba(0, 0, 0, 0.8) 10%, rgba(8, 8, 8, 0.12) 100%);
+$gradiente-cubrir-poco: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+$gradiente-cubrir-medio: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+$gradiente-form: linear-gradient(rgba(10, 11, 11, 0.8) 70%, rgba(0, 0, 0, 0.6) 100%);
+$gradiente-dark: linear-gradient(91deg, rgba(0, 0, 0, 0.8) 10%, rgba(8, 8, 8, 0.12) 100%);
 
 
 $breakpoint-mobile: 768px;
