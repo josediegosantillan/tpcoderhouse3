@@ -1,3 +1,6 @@
+@use 'partials/base/reset';
 @use 'partials/base/inicial';
+@use 'partials/components/generales';
 @use 'partials/components/banner';
 @use 'partials/components/cards';
+@use 'partials/components/footer';

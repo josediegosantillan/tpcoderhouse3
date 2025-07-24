@@ -3,8 +3,19 @@
 @use '../utilities/variables';
 
 .card {
-  @include mixins.flex(column, center, flex-start);
+  @include mixins.flex(column, center, center);
   background-color: variables.$color-tarjeta;
+  p {
+    font-weight: variables.$font-weight-medium;
+    text-align: center;
+    color: variables.$color-text-secundario;
+    line-height: variables.$font-size-normal-mas;
+    padding: 1rem;
+    margin: 0;
+  }
+  img:hover {
+  transform: scale(1.02);
+}
 
 }
 //para el formato de la imagen que tienen las cards
@@ -24,3 +35,46 @@ transition: transform 0.3s ease;
   margin: 1rem 1rem 2rem 0;
 }
 
+.resena_card{
+  background-color: #fdfbf5;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+}
+.resena_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.resena_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.7rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.resena_usuario h3 {
+  margin: 0;
+  color: #2c2c2c;
+}
+.resena_fecha {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+.resena_estrellas {
+  width: 100px;
+  margin-bottom: 0.75rem;
+}
+.resena_body p {
+  font-style: italic;
+  font-weight: 500;
+  color: #262827;
+  line-height: 1.6;
+  margin: 0;
+}

@@ -1,0 +1,8 @@
+@use '../utilities/extend';
+
+.especiales h2 {
+     @extend %etiquetas-h;
+}
+.resenas h2 {
+    @extend %etiquetas-h;
+}

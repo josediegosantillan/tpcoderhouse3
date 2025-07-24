@@ -1,0 +1,48 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+// @include scss\partials\utilities\_mixins.scss
+
+.footer {
+    background-color: variables.$color-tarjeta;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    border-top: 1px solid #e0e0e0;
+    @include mixins.flex(row, center, center);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sociales {
+    @include mixins.flex(row, center, center);
+    margin-bottom: 1rem;
+
+    img {
+        width: 32px;
+        height: 32px;
+        margin: 0 0.75rem;
+        transition: transform 0.3s ease;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.copyright p {
+    margin: 0;
+    color: variables.$color-text-secundario;
+    font-size: variables.$font-size-chico;
+    font-weight: variables.$font-weight-medium;
+}
