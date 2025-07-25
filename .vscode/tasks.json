@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sass",
+			"type": "shell",
+			"command": "sass --watch scss/main.scss styles/style.css",
+			"group": "build",
+			"isBackground": true,
+		}
+	]
+}

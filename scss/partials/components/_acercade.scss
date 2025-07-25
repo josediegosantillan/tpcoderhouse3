@@ -1,2 +1,7 @@
-@use 'partials/utilities/mixins';
+@use '../utilities/mixins';
 
+@use '../utilities/variables';
+
+.banner-acerca {
+   @include mixins.barner(variables.$gradiente-cubrir-poco, '../img/mesa_restaurant.png', 450px);
+}

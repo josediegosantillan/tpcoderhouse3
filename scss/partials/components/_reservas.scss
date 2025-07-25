@@ -1,0 +1,16 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+
+.container {
+    @include mixins.flex( column, center, center );
+}
+.contacto{
+    @include mixins.barner( variables.$gradiente-cubrir-radial, '../img/Cerveza_papas_fondo.png', auto );
+}
+.formulario {
+    padding: 2.5rem;
+    background-image: variables.$gradiente-form;
+    border-radius: variables.$border-radius-chico;
+    box-shadow: variables.$shadow-fuerte;
+}

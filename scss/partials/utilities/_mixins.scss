@@ -1,13 +1,13 @@
 
-@mixin barner($imagen: '../img/hamburguesa_cerveza.webp', $alto: 400px) {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($imagen);
+@mixin barner($gradiente: $gradiente-cubrir-poco, $imagen: '../img/hamburguesa_cerveza.webp', $alto: 400px) {
+        background-image: $gradiente, url($imagen);
         height: $alto;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         width: 100%;
-        
-        
+        // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Cerveza_papas_fondo.png);
+        // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
 }
 
 @mixin cardContainer($width: 300px, $height: 400px, $bgColor: white) {

@@ -1,5 +1,8 @@
 @use '../utilities/mixins';
+@use '../utilities/variables';
 
 .banner {
-  @include mixins.barner('../img/hamburguesa_cerveza.webp', 450px);
+  @include mixins.barner(variables.$gradiente-cubrir-poco, '../img/hamburguesa_cerveza.webp', 450px);
+
+  // gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
 }
