@@ -8,11 +8,8 @@
     font-weight: variables.$font-weight-semibold;
 }
 
-// .card-image {
-//     max-width: 100%;
-//     height: auto;
-//     margin-top: 0.7rem;
-//     border-radius: 10px;
-//     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-//     transition: transform 0.3s ease;
-// }
+%fondo-texto{
+    background: linear-gradient(rgb(19 46 55 / 34%), rgb(3 12 10 / 40%));
+    border-radius: 4rem;
+    padding: 1rem;
+}

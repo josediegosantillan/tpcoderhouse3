@@ -2,6 +2,25 @@
 
 @use '../utilities/variables';
 
+@use '../utilities/extend';
+
 .banner-acerca {
    @include mixins.barner(variables.$gradiente-cubrir-poco, '../img/mesa_restaurant.png', 450px);
+}
+.imagen-acerca-de {
+   @include mixins.barner(radial-gradient(at center, rgb(0 0 0 / 67%), rgb(0 0 0 / 73%)), '../img/hamburgueseria.png', auto);
+   border-radius: 2rem;
+    box-shadow: 10px 9px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+.historia{
+   @extend %fondo-texto;
+}
+
+.filosofia > p{
+   font-style: italic;
+    font-weight: 500;
+    color: #262827;
+    line-height: 1.6;
+    margin: 0;
 }

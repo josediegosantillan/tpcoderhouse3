@@ -3,6 +3,14 @@
 .especiales h2 {
      @extend %etiquetas-h;
 }
+
+.especiales h3 {
+    @extend %etiquetas-h;
+}
 .resenas h2 {
     @extend %etiquetas-h;
 }
+
+.texto-etiquetas-blanco {
+    color: white;
+}   

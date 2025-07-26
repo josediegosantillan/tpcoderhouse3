@@ -29,11 +29,21 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
-.especiales h2, .resenas h2 {
+.especiales h2, .especiales h3, .resenas h2 {
   text-align: center;
   margin-top: 1.5rem;
   color: #1c1c1c;
   font-weight: 600;
+}
+
+.historia {
+  background: linear-gradient(rgba(19, 46, 55, 0.34), rgba(3, 12, 10, 0.4));
+  border-radius: 4rem;
+  padding: 1rem;
+}
+
+.texto-etiquetas-blanco {
+  color: white;
 }
 
 .banner {
@@ -45,14 +55,14 @@ body {
   width: 100%;
 }
 
-.card {
+.cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f0eee7;
 }
-.card p {
+.cards p {
   font-weight: 500;
   text-align: center;
   color: #1c1c1c;
@@ -60,11 +70,11 @@ body {
   padding: 1rem;
   margin: 0;
 }
-.card img:hover {
+.cards img:hover {
   transform: scale(1.02);
 }
 
-.card-image {
+.cards-image {
   max-width: 100%;
   height: auto;
   margin-top: 0.7rem;
@@ -73,14 +83,20 @@ body {
   transition: transform 0.3s ease;
 }
 
-.card-container {
+.cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin: 1rem 1rem 2rem 0;
+  align-items: start;
+  margin: 1rem 1rem 2rem 1rem;
 }
 
-.resena_card {
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.resena_cards {
   background-color: #fdfbf5;
   border-radius: 15px;
   padding: 1.5rem;
@@ -206,6 +222,71 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+}
+
+.imagen-acerca-de {
+  background-image: radial-gradient(at center, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.73)), url("../img/hamburgueseria.png");
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 10px 9px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+.filosofia > p {
+  font-style: italic;
+  font-weight: 500;
+  color: #262827;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sucursal-principal {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .sucursal-principal {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+  }
+}
+.listado_especiales {
+  display: flex;
+  flex-direction: colum;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0eee7;
+}
+
+.sucursal-mapa {
+  flex: 1;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+}
+
+.sucursal-mapa span {
+  display: block;
+  text-align: center;
+  margin: 0.3rem auto;
+  width: fit-content;
+}
+
+.sucursal-info {
+  flex: 1;
+  text-align: center;
+}
+
+.listado_especiales img {
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  margin-top: 0.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */

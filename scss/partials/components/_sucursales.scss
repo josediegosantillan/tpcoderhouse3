@@ -1,0 +1,44 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+
+.sucursal-principal {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .sucursal-principal {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1rem; 
+    }
+}
+.listado_especiales {
+    @include mixins.flex(colum, center, center);
+    background-color:variables.$color-tarjeta;
+}
+.sucursal-mapa {
+    flex: 1;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+}
+
+.sucursal-mapa span {
+  display: block;     
+  text-align: center; 
+  margin: 0.3rem auto;  
+  width: fit-content;
+}
+
+.sucursal-info {
+    flex: 1;
+    text-align: center;
+}
+.listado_especiales img {
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    margin-top: 0.7rem;
+}
