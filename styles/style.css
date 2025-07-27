@@ -289,4 +289,31 @@ body {
   margin-top: 0.7rem;
 }
 
+.banner-menu {
+  background-image: radial-gradient(at bottom, rgba(0, 0, 0, 0.35), rgba(77, 72, 72, 0.1)), url("../img/banner_menu.png");
+  height: 490px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .banner-menu {
+    background-image: radial-gradient(at bottom, rgba(0, 0, 0, 0.35), rgba(77, 72, 72, 0.1)), url("../img/banner_menu_mobile.png");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+.menu h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
 /*# sourceMappingURL=style.css.map */

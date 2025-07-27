@@ -1,0 +1,18 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+.banner-menu{
+    @include mixins.barner(variables.$gradiente-cubrir-radial, '../img/banner_menu.png', 490px);
+    position: relative;
+}
+
+@media (max-width: variables.$breakpoint-mobile) {
+    .banner-menu {
+        @include mixins.barner(variables.$gradiente-cubrir-radial, '../img/banner_menu_mobile.png', 400px);
+    }
+}.menu  h1 { 
+    text-align: center;
+    margin: 2rem 0;
+    font-size: variables.$font-size-extra-grande;
+    color: variables.$color-text-primario;
+}
